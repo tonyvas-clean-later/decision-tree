@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decision Tree Maker</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Decision Tree Maker</h1>
+
+        <div id="buttons_container">
+            <div>
+                <button onclick="openDocument()">Open</button>
+                <button onclick="newDocument()">New</button>
+                <button onclick="saveDocument()" disabled>Save</button>
+                <button onclick="saveDocumentAs()" disabled>Save As</button>
+            </div>
+            <div>
+                <button onclick="toggleControls()">Show Controls</button>
+            </div>
+        </div>
+
+        <canvas></canvas>
+    </main>
+
+    <div id="controls_container">
+        <h2>Controls</h2>
+        <div id="controls_div">
+            <table>
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 70%;">
+                </colgroup>
+    
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Scroll</td>
+                        <td>Scroll through the tree</td>
+                    </tr>
+                    <tr>
+                        <td>Click</td>
+                        <td>Select action</td>
+                    </tr>
+                    <tr>
+                        <td>Enter / Double Click</td>
+                        <td>Edit selected action</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>Delete selected action</td>
+                    </tr>
+                    <tr>
+                        <td>Arrow Keys</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
